@@ -4,7 +4,7 @@ This project demonstrates the use of LangChain to implement a Retrieval-Augmente
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine and on AWS for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine
 
 ## Prerequisites
 
@@ -41,8 +41,8 @@ Make sure to have the following tools installed to run this project:
 Clone the repository to your local machine:
 
 ```bash
-    git clone https://github.com/alexandrac1420/LLM_PrimeraParte.git
-    cd LLM_PrimeraParte
+    git clone https://github.com/alexandrac1420/LLM_SegundaParte.git
+    cd LLM_SegundaParte
 ```
 
 
@@ -69,34 +69,53 @@ Within the Jupyter Notebook, set up the API keys by following the instructions i
 ## Usage Instructions
 
 ### Executing the Notebook
-Run each cell in the notebook one by one, ensuring each step completes without errors. Below are key steps with expected results and their purpose:
+Run each cell in the notebook one by one, ensuring each step completes without errors. If you want to view the complete output of each command execution, refer to the [HTML file with full execution results](./langchain.html). Below are key steps with expected results and their purpose:
 
 1. **Loading and Splitting Blog Content for Indexing**:
    This step loads specific web content from a URL and divides it into manageable fragments for easier analysis and future retrieval. Relevant content is extracted using class filters (such as post title and content), ensuring the model accesses only the essential information. Splitting the text into smaller fragments optimizes model accuracy by enabling it to focus on relevant portions within its context limit.
+   ![image](https://github.com/user-attachments/assets/d93bec46-8d86-42d4-8e14-383dbe5c88b4)
+
 
 2. **Checking the Length of the First Document**:
    Checking the length of the first loaded document ensures the entire content was loaded successfully. This is important because language models have a context limit, and knowing the text size helps plan better for processing and segmentation.
+   ![image](https://github.com/user-attachments/assets/afa91387-9a55-40b0-8961-08079be4c5a3)
+
 
 3. **Document Content Verification (first 500 characters)**:
    This step prints the first 500 characters of the document to visually verify that the content has loaded correctly and aligns with the source.
+   ![image](https://github.com/user-attachments/assets/0bfc1578-8edd-4ead-87a3-0bdbf75ada68)
+
 
 4. **Viewing Metadata for the Tenth Fragment**:
    Displaying metadata for a specific fragment helps verify details about the source and the fragment’s position within the original text. This information is useful to ensure that each fragment retains its context reference, essential for retrieval-augmented applications.
+   ![image](https://github.com/user-attachments/assets/464004cd-67f5-4b58-a3cc-12f10ef553bb)
+
 
 5. **Retriever Setup and Sample Query**:
    This step sets up a retrieval mechanism to find relevant fragments within the indexed content. By performing a sample query, we retrieve related fragments, allowing us to verify the model’s ability to locate and group pertinent information based on a question or specific topic.
+   ![image](https://github.com/user-attachments/assets/a8c18d85-693c-4d34-9f67-1cd9950b17ba)
+
 
 6. **Running an Example Prompt Using Prompt Hub**:
    This step uses a predefined prompt template from the Prompt Hub, optimized for answering questions clearly and concisely. Running the prompt shows an example of how responses are structured for Q&A tasks, useful for standardizing interactions with the model.
+   ![image](https://github.com/user-attachments/assets/fa84e38b-230a-4137-a423-000c74690fad)
+
 
 7. **Printing Example Message Content**:
    Printing the content of an example message verifies that the prompt generates a clear, structured response following specific guidelines for answering a question using retrieved fragments.
+   ![image](https://github.com/user-attachments/assets/64076f92-503c-4da5-a349-3ef21d769ae4)
+
 
 8. **Example RAG Chain with Retrieved Document Formatting**:
    This step sets up a retrieval-augmented generation (RAG) chain allowing the model to generate responses using specific fragments from the indexed text. The generated response illustrates how the model uses contextual information to improve accuracy and relevance in its answers.
+   ![image](https://github.com/user-attachments/assets/af00e551-db00-40eb-8639-3ff87e918e3e)
+
+
 
 9. **RAG Chain with Templates and Q&A Responses**:
    Here, a more complex RAG chain is configured, including message templates to better structure model responses. The goal of this step is to produce concise, well-formatted responses in three sentences, allowing for detailed queries with a consistent response style.
+   ![image](https://github.com/user-attachments/assets/61f67343-1512-4b8f-9ebd-2e8102d912a0)
+
 
 ## RAG Explanation (Retrieval-Augmented Generation)
 
@@ -105,7 +124,7 @@ Retrieval-Augmented Generation (RAG) is a method that integrates external data s
 ## Architecture 
 
 ### Architecture Diagram
-![Arquitectura](Pictures/Arquitectura.png)
+![Arquitectura](https://github.com/alexandrac1420/LLM_SegundaParte/blob/master/Pictures/Arquitectura.png)
 
 The architecture of this project follows a client-server structure where the **client**, represented by a Jupyter Notebook, executes code and makes API requests to interact with the language model. From this interactive environment, users can initiate queries and analyze the model's responses directly.
 
@@ -126,7 +145,7 @@ Finally, **LangSmith tracing** provides a logging and monitoring system for API 
 
 ## Versioning
 
-I use [GitHub](https://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/alexandrac1420/LLM_PrimeraParte.git).
+I use [GitHub](https://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/alexandrac1420/LLM_SegundaParte.git).
 
 ## Authors
 
