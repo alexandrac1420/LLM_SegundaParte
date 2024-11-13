@@ -69,7 +69,7 @@ Within the Jupyter Notebook, set up the API keys by following the instructions i
 ## Usage Instructions
 
 ### Executing the Notebook
-Run each cell in the notebook one by one, ensuring each step completes without errors. If you want to view the complete output of each command execution, refer to the [HTML file with full execution results](https://github.com/alexandrac1420/LLM_SegundaParte/blob/master/langchain.html). Below are key steps with expected results and their purpose:
+Run each cell in the notebook one by one, ensuring each step completes without errors. If you want to view the complete output of each command execution, refer to the [HTML file with full execution results](https://alexandrac1420.github.io/LLM_SegundaParte/). Below are key steps with expected results and their purpose:
 
 1. **Loading and Splitting Blog Content for Indexing**:
    This step loads specific web content from a URL and divides it into manageable fragments for easier analysis and future retrieval. Relevant content is extracted using class filters (such as post title and content), ensuring the model accesses only the essential information. Splitting the text into smaller fragments optimizes model accuracy by enabling it to focus on relevant portions within its context limit.
